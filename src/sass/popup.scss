@@ -1,0 +1,125 @@
+@import "variables";
+@import "player";
+@import "volume";
+
+body {
+    width: 320px;
+    margin: 0 auto;
+	padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+	padding: 0;
+}
+
+.empty {
+	text-align: center;
+	line-height: 92px;
+}
+
+.radio {
+	position: relative;
+	height: 72px;
+	padding: 10px;
+	
+	background-color: $lowGray;
+
+	.name,
+	.city {
+		position: absolute;
+		left: 100px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+	.name {
+		top: 15px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	
+	.city {
+		top: 35px;
+		font-size: 13px;
+	}
+
+	.volume {
+		position: absolute;
+		left: 93px;
+		top: 50px;
+		
+	}
+}
+
+.history {
+	position: relative;
+	height: 48px;
+	padding: 8px 10px;
+	
+	border-top: 1px solid $bgColor;
+
+	.player {
+		width: 48px; height: 48px;
+
+		img.logo,
+		a {
+			width: 48px; height: 48px;
+		}
+		
+		a {
+			&:hover {
+				background-size: 30px;
+			}
+			
+			&.play:hover {
+				background-position: 11px 10px;
+			}
+		}
+	}
+	
+	.name,
+	.city {
+		position: absolute;
+		left: 100px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+	.name {
+		top: 15px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.city {
+		top: 35px;
+		font-size: 12px;
+	}
+}
+
+.options {
+	a#options {
+		background-color: $green;
+		text-align: center;
+		color: $white;
+		width: 100%;
+		height: 20px;
+		padding: 10px 0;
+		font-size: 14px;
+		display: block;
+		text-decoration: none;
+		
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: currentColor;
+		}
+		span {
+			display: inline-block;
+			margin-top: -14px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,4 @@
+.volume
+	a.icon-level(href="#", v-on:click="btnMute(this.value)", class="{{ volumeIcon }}")
+	input.value(v-on:change="btnVolume(this.value)", v-model="value", type="range", min="0", max="10", step="1", value="{{ volume }}") 
+	span.level {{ value * 10 }}%

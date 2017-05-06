@@ -1,0 +1,39 @@
+{
+  "name": "radio",
+  "version": "0.2.4",
+  "description": "Chrome Extension",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davland7/radio.git"
+  },
+  "keywords": [
+    "Radio",
+    "Quebec",
+    "Chrome",
+    "Extension"
+  ],
+  "author": "davidlandry.ca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davland7/radio/issues"
+  },
+  "homepage": "https://github.com/davland7/radio#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-zip": "^3.2.0",
+    "imagemin-pngquant": "^4.2.2",
+    "vinyl-paths": "^2.1.0"
+  }
+}
